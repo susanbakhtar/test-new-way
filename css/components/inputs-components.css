@@ -1,0 +1,6 @@
+.input-style-1 {
+  padding: calc(var(--vw) * 1vw) calc(var(--vw) * 1.4vw);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}

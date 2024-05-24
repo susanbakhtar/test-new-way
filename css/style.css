@@ -1,0 +1,144 @@
+@import "./reset.css";
+@import "./components/btn-components.css";
+@import "./components/inputs-components.css";
+
+main {
+  width: 100%;
+}
+
+nav {
+  border: 0.5rem solid;
+
+  height: 80px;
+  padding: 0 calc(var(--vw) * 2vw);
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: calc(var(--vw) * 1vw);
+}
+
+nav .baby {
+  font-size: calc(var(--vw) * 1.1vw);
+  border: 2px solid;
+
+  display: flex;
+  align-items: center;
+}
+
+nav .baby-1 ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vw) * 2vw);
+}
+
+nav .baby-1 ul li a {
+  font-size: calc(var(--vw) * 1vw);
+  font-weight: 600;
+}
+
+nav .baby-2 {
+  justify-items: center;
+}
+
+nav .baby-2 img {
+  width: calc(var(--vw) * 7vw);
+  aspect-ratio: 3 / 1;
+}
+
+nav .baby-3 {
+  justify-content: flex-end;
+
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vw) * 3vw);
+}
+
+nav .baby-3 .buttons {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vw) * 2vw);
+}
+
+.hidden {
+  display: none;
+}
+
+/* media */
+@media (max-width: 1071px) {
+  :root {
+    --vw: 1.4;
+  }
+
+  nav {
+    grid-template-columns: auto auto 1fr;
+  }
+  nav .baby-1 {
+    order: 2;
+  }
+
+  nav .baby-2 {
+    order: 1;
+  }
+
+  nav .baby-3 {
+    order: 3;
+  }
+
+  nav .baby-3 input {
+    display: none;
+  }
+
+  nav .baby-3 i {
+    display: initial;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  nav .baby-1 ul {
+    display: none;
+  }
+
+  nav .baby-1 i {
+    display: initial;
+    font-size: calc(var(--vw) * 3vw);
+  }
+
+  nav .baby-3 .buttons .log-in {
+    display: none;
+  }
+
+  nav .baby-3 {
+    gap: calc(var(--vw) * 2vw);
+  }
+
+  nav .baby-1 {
+    order: 1;
+  }
+
+  nav .baby-2 {
+    order: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --vw: 1.9;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --vw: 2.2;
+  }
+  nav {
+    padding: 0 calc(var(--vw) * 1.2vw);
+  }
+
+  /* nav .baby-3 i {
+    font-size: calc(var(--vw) * 2.5vw);
+  } */
+}

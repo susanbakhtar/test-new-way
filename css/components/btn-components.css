@@ -1,0 +1,29 @@
+button {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.log-in {
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+}
+
+.sign-up {
+  background-color: #0d0c22;
+  color: #fff;
+  font-size: calc(var(--vw) * 1.2vw);
+  padding: calc(var(--vw) * 1vw) calc(var(--vw) * 1.4vw);
+  border-radius: 50px;
+}
+
+/* media */
+
+@media (max-width: 400px) {
+  .sign-up {
+    padding: calc(var(--vw) * 1.2vw) calc(var(--vw) * 1.9vw);
+    border-radius: 100px;
+  }
+}
