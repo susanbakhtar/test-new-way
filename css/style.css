@@ -4,12 +4,13 @@
 
 main {
   width: 100%;
+  max-width: 1600;
 }
 
 nav {
   border: 0.5rem solid;
 
-  height: 80px;
+  min-height: 80px;
   padding: 0 calc(var(--vw) * 2vw);
   display: grid;
 
