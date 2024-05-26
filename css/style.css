@@ -4,7 +4,6 @@
 
 main {
   width: 100%;
-  max-width: 2000px;
 }
 
 /* ----- navigation ----- */
@@ -81,6 +80,7 @@ nav .baby-3 .buttons {
   text-align: center;
 
   aspect-ratio: 1 / 0.4;
+  transition: height 5s linear;
   padding: calc(var(--vw) * 3vw) calc(var(--vw) * 1vw);
 }
 
@@ -283,8 +283,8 @@ nav .baby-3 .buttons {
 
   /* ----- section-1 ----- */
   .section-1 {
-    min-height: calc(100dvh - 80px);
-    transition: height 2s linear;
+    transition: min-height 2s linear;
+    min-height: calc(100vh - 80px);
     aspect-ratio: initial;
 
     padding: calc(var(--vw) * 0vw) calc(var(--vw) * 1vw);
