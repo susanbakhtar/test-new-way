@@ -20,6 +20,26 @@ button {
   border-radius: 50px;
 }
 
+.btn-style-1 {
+  background-color: #0d0c22;
+  color: #fff;
+  font-size: calc(var(--vw) * 1.2vw);
+  padding: calc(var(--vw) * 0.9vw) calc(var(--vw) * 1.4vw);
+  /* padding: 1.2rem 1.6rem; */
+
+  border-radius: 50px;
+}
+
+.btn-style-2 {
+  background-color: #fff;
+  color: #000;
+  font-size: calc(var(--vw) * 1.2vw);
+  padding: calc(var(--vw) * 0.9vw) calc(var(--vw) * 1.4vw);
+  /* padding: 1.2rem 1.6rem; */
+
+  border-radius: 50px;
+}
+
 /* media */
 
 @media (max-width: 400px) {
