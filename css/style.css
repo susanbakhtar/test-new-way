@@ -174,7 +174,7 @@ nav .baby-3 .buttons {
 
 .secrion-2 .baby .overlay .top {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: calc(var(--vw) * 1vw);
   line-height: 1.4;
   font-weight: 100;
 }
@@ -195,6 +195,8 @@ nav .baby-3 .buttons {
   border-radius: 70px;
   border: 0.5px solid #ffffffa7;
   font-size: 1.1rem;
+  font-size: calc(var(--vw) * 0.8vw);
+
   font-weight: 200;
 }
 
@@ -203,7 +205,7 @@ nav .baby-3 .buttons {
 /* section-3 */
 .section-3 {
   border: 0.5rem solid gray;
-  margin-top: 4rem;
+  margin-top: calc(var(--vw) * 4vw);
 
   display: flex;
   flex-flow: column;
@@ -220,7 +222,7 @@ nav .baby-3 .buttons {
 .section-3 .content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 2rem;
+  gap: calc(var(--vw) * 2vw);
 }
 
 .section-3-baby {
