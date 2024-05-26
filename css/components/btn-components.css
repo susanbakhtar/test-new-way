@@ -9,13 +9,14 @@ button {
   font-weight: 600;
   color: #333;
   background-color: transparent;
+  font-size: calc(var(--vw) * 1vw);
 }
 
 .sign-up {
   background-color: #0d0c22;
   color: #fff;
   font-size: calc(var(--vw) * 1.2vw);
-  padding: calc(var(--vw) * 1vw) calc(var(--vw) * 1.4vw);
+  padding: calc(var(--vw) * 0.9vw) calc(var(--vw) * 1.4vw);
   border-radius: 50px;
 }
 
